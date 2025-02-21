@@ -16,7 +16,7 @@ jobs:
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
-          hugo-version: 'latest'
+          hugo-version: '0.136.0'
           extended: true
     - name: Build 
       run: hugo --config "configs/www.barcodize.ai.toml","configs/common.barcodize.ai.toml" -b "https://www.barcodize.ai" --cleanDestinationDir --minify --templateMetrics --templateMetricsHints --enableGitInfo
